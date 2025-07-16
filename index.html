@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 231 - Web Frontend Development - Karen Joos</title>
-    <meta name="description" content="WDD 231 - Web Frontend Development - Karen Joos Chamber of Commerce">
+    <meta name="description" content="WDD 231 - Web Frontend Development - Karen Joos Course Home Page">
     <meta name="autor" content="Karen Joos">
 
     <!-- Script Links Here -->
@@ -15,7 +15,8 @@
     <!-- Style Sheets Here -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <!-- <link rel="stylesheet" href="styles/smaller.css"> -->
+    <link rel="stylesheet" href="styles/larger.css">
 
     <!-- Google Font Here -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +26,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.svg" alt="site logo" width="1" height="1">
+        <img src="images/favicon.ico" alt="site logo" width="1" height="1">
         <span>Karen Joos</span>
         <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
     </header>
@@ -39,9 +40,14 @@
     <main>
         <h1>Home</h1>
         <div class="me">
-            <h2>About Me</h2>
-            <p></p>
-            <h2>Student Photo</h2>
+            <div class="about">
+                <h2>About Me</h2>
+                <p>My name is Karen Joos. I live in Utah. I have been married for just over a year. I have an 11-year-old daughter. I love spending time outdoors working in the yard. I also enjoy spending time with my family whether that is hiking, going for a ride, or doing a jigsaw puzzle together. I currently work at a local elementary school as a teacher assistant and I am working on getting my Bachelor's Degree in Software Development.</p>
+            </div>
+            <div class="photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Karen Joos" >
+            </div>
         </div>
         <div class="courses">
             <h2>Web Certificate Courses</h2>
@@ -58,8 +64,8 @@
             <a href="https://www.linkedin.com/in/karen-joos-22700a2b2/" target="_blank"><img src="images/linkedin.svg" alt="Linked in" width="16" height="16"></a>
             <a href="https://www.facebook.com/karen.c.ford.9" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
         </div>
-        <p>copyright symbol and current year</p>
-        <p>Last Modified</p>
+        <p>&copy <span id="currentyear"></span> Karen Joos  USA</p>
+        <p><span id="lastModified"></span></p>
     </footer>
 </body>
 </html>

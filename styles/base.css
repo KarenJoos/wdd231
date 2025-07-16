@@ -1,6 +1,7 @@
 /******************* FONT COLORS *********************
-Russian violet #241E4E
-Vanilla #EADAA2
+Tropical Indigo #7E78D2 
+Zomp(green) #539987 
+Cream #EDF7B5
 */
 
 
@@ -22,14 +23,14 @@ header img {
 
 header span {
     font-size: 1.2rem;
-    color: #241E4E;
+    color: #7E78D2;
 }
 
 /************************* HAMBURGER *************************/
 .hamburger {
     background: none;
     border: none;
-    color: #241E4E;
+    color: #7E78D2;
     cursor: pointer;
     font-family: Verdana;
 }
@@ -61,7 +62,7 @@ header span {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    /* color: THEME COLOR; */
+    color: #539987;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
 }
@@ -78,6 +79,38 @@ header span {
 h1 {
     margin-left: 10px;
 }
+
+/************************* ABOUT ME *************************/
+
+.me {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-left: 10px;
+    column-gap: 8px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    background-color: #539987;
+}
+
+.me img {
+
+    height: 200px;
+}
+
+/************************** COURSES *************************/
+
+.courses {
+
+}
+
+.courses ul{
+    background-color: #539987;
+
+}
+
 
 /************************** FOOTER **************************/
 
