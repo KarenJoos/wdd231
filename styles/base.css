@@ -45,6 +45,7 @@ header span {
 }
 
 /************************* NAVIGATION *************************/
+
 .navigation {
     display: none;
 }
@@ -62,7 +63,7 @@ header span {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: #539987;
+    color: #7E78D2;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
 }
@@ -72,9 +73,8 @@ header span {
 }
 
 .navigation a:hover {
-    background-color: #EADAA2;
+    background-color: #EDF7B5;
 }
-
 
 h1 {
     margin-left: 10px;
@@ -87,6 +87,7 @@ h1 {
     grid-template-columns: 2fr 1fr;
     margin-left: 10px;
     column-gap: 8px;
+    margin-right: 10px;
 }
 
 h2 {
@@ -96,21 +97,41 @@ h2 {
 }
 
 .me img {
-
+    width: auto;
     height: 200px;
+    /* display: flex;
+    justify-content: center; */
 }
 
 /************************** COURSES *************************/
 
-.courses {
-
+.courses ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
 }
 
-.courses ul{
+.courses li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #539987;
-
+    height: 35px;
+    padding: 5px;
+    border: #ccc solid 1px;
+    border-radius: 4px;
 }
 
+.courses a {
+    text-decoration: none;
+}
+
+/* .courses a:hover {
+    background-color: #ddd;
+} */
 
 /************************** FOOTER **************************/
 
