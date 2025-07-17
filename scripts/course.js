@@ -84,4 +84,18 @@ const courses = [
         ],
         completed: false
     }
-]
+];
+
+//call function and pass in const courses see line 106 from filtered-temples.js
+
+
+//create function for courses see line 176 from filtered-temples.js
+
+function createCourseCard(filteredCourses) {
+    document.querySelector("courses").innerHTML = "";
+
+    filteredCourses.forEach(courses => {
+        let card = document.createElement("section")
+        
+    })
+}
