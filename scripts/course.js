@@ -92,10 +92,14 @@ const courses = [
 //create function for courses see line 176 from filtered-temples.js
 
 function createCourseCard(filteredCourses) {
-    document.querySelector("courses").innerHTML = "";
+    document.querySelector('courses').innerHTML = "";
 
-    filteredCourses.forEach(courses => {
-        let card = document.createElement("section")
+    filteredCourses.forEach(course => {
+        let card = document.createElement('section');
+        let name = document.createElement('h3');
+        let completed = document.createElement('✔️');
+
+        name.textContent = course.courseName;
         
     })
 }
