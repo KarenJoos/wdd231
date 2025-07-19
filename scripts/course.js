@@ -123,9 +123,7 @@ wddCourses.addEventListener('click', () => {
     document.getElementById("WDD").innerHTML = numbers.reduce(totalCredits);
 });
 
-function totalCredits(total, credits) {
-    return total - credits;
-}
+
 
 //create function for courses see line 176 from filtered-temples.js
 function createCourseCard(filteredCourses) {
@@ -153,6 +151,18 @@ function createCourseCard(filteredCourses) {
         document.querySelector(".course-count").textContent = `The total number of courses listed below is ${counts}.`;
         
         document.querySelector(".courses-listed").appendChild(card);
+
+        // let total = course.reduce((course, index) => {
+        //     if ([course.id]) {
+        //         [course.id] = [course.id, [course.credits]];
+        //     }
+        // }, []);
+
+        // for (var i = 0; i < course.length; i++) {
+        //     var v = course.credits;
+        // }
+
+        // document.querySelector(".course-count").textContent = `The total number of credits listed below is ${total}.`;
 
         
         
