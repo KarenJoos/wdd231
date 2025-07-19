@@ -1,9 +1,7 @@
-const allCourses = document.querySelectorAll('courses');
+const allCourses = document.querySelectorAll("#all");
+const cseCourses = document.querySelector("#cse");
+const wddCourses = document.querySelector("#wdd");
 
-
-
-let filterC = courses.filter(subject => subject === 'CSE');
-document.querySelector('#c-courses').textContent = filterC;
 
 
 const courses = [
@@ -87,19 +85,78 @@ const courses = [
 ];
 
 //call function and pass in const courses see line 106 from filtered-temples.js
+allCourses[0].addEventListener('click', () => {
+    const allCourse = courses.filter(course => {
+        const all = course.subject;
+        return all;
+    });
 
+    createCourseCard(allCourse);
+
+});
+
+cseCourses.addEventListener('click', () => {
+    const targetSubject = "CSE";
+    const cseCourseFilter = [];
+
+    for (let i = 0; i < courses.length; i++) {
+        if (courses[i].subject === targetSubject) {
+            cseCourseFilter.push(courses[i]);
+        }
+    }    
+
+    createCourseCard(cseCourseFilter);
+});
+
+wddCourses.addEventListener('click', () => {
+    const targetSubject = "WDD";
+    const wddCourseFilter = [];
+
+    for (let i = 0; i < courses.length; i++) {
+        if (courses[i].subject === targetSubject) {
+            wddCourseFilter.push(courses[i]);
+        }
+    }
+
+    createCourseCard(wddCourseFilter);
+
+    document.getElementById("WDD").innerHTML = numbers.reduce(totalCredits);
+});
+
+function totalCredits(total, credits) {
+    return total - credits;
+}
 
 //create function for courses see line 176 from filtered-temples.js
-
 function createCourseCard(filteredCourses) {
-    document.querySelector('courses').innerHTML = "";
+    document.querySelector(".courses-listed").innerHTML = "";
+    const counts = filteredCourses.length;
+    
 
     filteredCourses.forEach(course => {
-        let card = document.createElement('section');
-        let name = document.createElement('h3');
-        let completed = document.createElement('✔️');
 
-        name.textContent = course.courseName;
+        let card = document.createElement("section");
+        let subject = document.createElement("p");
+        // const bodyElement = subject.textContent;
+
+        if (course.completed) {
+            // then add check
+            subject.textContent += "\u2713";
+            card.style.backgroundColor += '#539987';
+        }
+
+        subject.textContent += course.subject + ` ` + course.number;
+        card.style.backgroundColor += '#7E78D2';
+
+        card.appendChild(subject);
+
+        document.querySelector(".course-count").textContent = `The total number of courses listed below is ${counts}.`;
         
-    })
+        document.querySelector(".courses-listed").appendChild(card);
+
+        
+        
+
+        // document.querySelector('#all').textContent = `The total number of courses listed below is${counts.length} divs in document.`;
+    });
 }

@@ -24,7 +24,8 @@
     <!-- Style Sheets Here -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
     <!-- Google Font Here -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,13 +35,21 @@
 
 <body>
     <header>
-
+        <img src="images/favicon.ico" alt="site logo" width="1" height="1">
+        <span>Herriman Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+        <nav id="nav-bar" class="navigation">
+            <li class="#"><a href="index.html">Home</a></li>
+            <li class="#"><a href="directory.html">Directory</a></li>
+            <li class="#"><a href="#">Join</a></li>
+            <li class="#"><a href="#">Discover</a></li>
+        </nav>
     </header>
     <main>
-
+        <img src="">
     </main>
     <footer>
-        <p>Herriman Chamber of Commerce\n 12345 Herriman Main\n Herriman, Utah 84096\n info@herrimancc.org\n (888)
+        <p>Herriman Chamber of Commerce<br> 12345 Herriman Main<br> Herriman, Utah 84096<br> info@herrimancc.org<br> (888)
             555-5555</p>
         <div class="social">
             <a href="https://github.com/KarenJoos" target="_blank"><img src="images/github.svg" alt="Git Hub" width="16"
@@ -50,9 +59,8 @@
             <a href="https://www.facebook.com/karen.c.ford.9" target="_blank"><img src="images/facebook.svg"
                     alt="Facebook" width="16" height="16"></a>
         </div>
-        <p>WDD231 Class Project\n Karen Joos\n &copy; <span id="currentyear"></span> Herriman Chamber of Commerce\n Last
+        <p>WDD231 Class Project<br> Karen Joos<br> &copy; <span id="currentyear"></span> Herriman Chamber of Commerce<br> Last
             Modified: <span id="lastModified"></span></p>
-        <!-- <p>Last Modified: <span id="lastModified"></span></p> -->
     </footer>
 </body>
 

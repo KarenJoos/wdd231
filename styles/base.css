@@ -129,8 +129,23 @@ h2 {
     text-decoration: none;
 }
 
-/* .courses a:hover {
-    background-color: #ddd;
+section {
+    margin: 1rem auto;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.courses-listed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.course-count {
+    font-style: italic;
+}
+
+/* .card {
+    padding: 10px;
 } */
 
 /************************** FOOTER **************************/
