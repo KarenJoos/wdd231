@@ -1,34 +1,47 @@
+// Step 2 open this file to browser
 const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json';
 
+// Step 3 declaring url
 const cards = document.querySelector('#cards');
 
-async function getProphetData() {
-    const response = await fetch('https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json');
-    const data = await response.json();
-    // console.table(data.prophets); 
-    displayProphets(data.prophets);
+// Step 4-10
+async function getProphetData() {        //creating async function
+    const response = await fetch(url);      //creating await and fetch
+    const data = await response.json();     //storing to .json
+    //console.table(data.prophets);         //check the data reponse
+    displayProphets(data.prophets); // note that you reference the prophets array of the JSON data object, not just the object
+}
 
-    const displayProphets = (prophets) => {
-        prophets.forEach((prophet) => {
+getProphetData();
 
-            let card = document.createElement('section');
-            letfullName = document.createElement('h2');
-            let img = document.createElement('portrait');
+getData();
 
-            fullName.textContent = `${prophet.name} lastname`;
+const displayProphets = (prophets) => {
+    prophets.forEach((prophet) => {
 
-            portrait.setAttribute('src', prophet.imageurl);
-            portrait.setAttribute('alt', `Portrait of ${prophet.name} lastname`);
-            portrait.setAttribute('loading', 'lazy');
-            portrait.setAttribute('width', '340');
-            portrait.setAttribute('height', '440');
+        let card = document.createElement('section');
+        let fullName = document.createElement('h2');
+        let birthDate = document.createElement('p');
+        let birthPlace = document.createElement('p');
+        let portrait = document.createElement('portrait');
+        
 
-            card.appendChild(card);
-            card.appendChild(portrait);
+        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+        birthDate.textContent = `Date of Birth: ${prophet.birthDate}`;
+        birthPlace.textContent = `Birth Place: ${prophet.birthPlace}`;
 
-            cards.appendChild(card);
-        });
-    }
+        portrait.setAttribute('src', prophet.imageurl);
+        portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
+        portrait.setAttribute('loading', 'lazy');
+        portrait.setAttribute('width', '340');
+        portrait.setAttribute('height', '440');
+
+        card.appendChild(card);
+        card.appendChild(portrait);
+
+        cards.appendChild(card);
+    });
+    
 }
 
 
