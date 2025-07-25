@@ -17,4 +17,4 @@ setTitle(byuiCourse);
 renderSections(byuiCourse.sections);
 
 export function setTitle(course) { }
-export function renderSections(sections) {}
+export function renderSections(sections) { }

@@ -143,9 +143,14 @@ section {
     font-style: italic;
 }
 
-/* .card {
-    padding: 10px;
-} */
+dialog {
+    background-color: #EDF7B5;
+    padding: 20px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
 
 /************************** FOOTER **************************/
 
