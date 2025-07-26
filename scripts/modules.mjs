@@ -1,6 +1,6 @@
-import byuiCourse from './course';
-import { setSectionSelection } from './sections';
-import { setTitle, renderSections } from './output';
+import byuiCourse from './course.mjs';
+import { setSectionSelection } from './sections.mjs';
+import { setTitle, renderSections } from './output.mjs';
 
 document.querySelector("#enrollStudent").addEventListener("click", function () {
     const sectionNum = Number(document.querySelector("#sectionNumber").value);
@@ -13,3 +13,6 @@ document.querySelector("#dropStudent").addEventListener("click", function () {
     renderSections(byuiCourse.sections);
 });
 
+setTitle(byuiCourse);
+renderSections(byuiCourse.sections);
+setSectionSelection(byuiCourse.sections);

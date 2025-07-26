@@ -1,4 +1,4 @@
-export const url = "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/"
+export const url = "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/";
 export const temples = [
     {
         "number": "1",

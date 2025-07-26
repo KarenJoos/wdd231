@@ -2,7 +2,7 @@ const allCourses = document.querySelectorAll("#all");
 const cseCourses = document.querySelector("#cse");
 const wddCourses = document.querySelector("#wdd");
 
-const modal = document.getElementById('course - details');
+const modal = document.getElementById('courseDetails');
 
 
 
