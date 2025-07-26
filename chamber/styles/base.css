@@ -68,9 +68,9 @@ header span {
     border-bottom: solid 1px #ddd;
 }
 
-.navigation li.current {
+/* .navigation li.current {
     background-color: #eee;
-}
+} */
 
 .navigation a:hover {
     background-color: #EDF7B5;
@@ -80,7 +80,91 @@ h1 {
     margin-left: 10px;
 }
 
+/************************* MEMBERS *************************/
+h2 {
+    margin: 1rem 0;
+    color: #7E78D2;
+}
 
+section {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 700px;
+    background-color: #fff;
+    font-family: Acme, Arial, sans-serif;
+}
+
+.menu {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: #539987;
+    text-align: center;
+
+    button {
+        padding: 0.5rem 1rem;
+        font-weight: 700;
+        background-color: #EDF7B5;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+
+    section {
+        text-align: center;
+
+        &>* {
+            margin: 0.1rem;
+        }
+    }
+
+    img {
+        border: 1px solid #fff;
+        box-shadow: 0 0 1rem #555;
+    }
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem; */
+
+        &>* {
+            margin: 0 1rem;
+        }
+
+        img {
+            display: none;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+    }
+}
+
+img {
+    width: auto;
+    height: 75px;
+}
 
 /************************** FOOTER **************************/
 

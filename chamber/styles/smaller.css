@@ -9,8 +9,31 @@
         min-width: 200px;
     }
 
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+
+
     footer {
         display: grid;
         grid-template-columns: 1fr;
     }
+}
+
+@media only screen and (max-width: 40rem) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+
+}
+
+@media only screen and (max-width: 25rem) {
+
+    .list {
+        display: flex;
+    }
+
 }

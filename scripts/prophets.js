@@ -1,5 +1,5 @@
 // Step 2 open this file to browser
-const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json';
+const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json'; 
 
 // Step 3 declaring url
 const cards = document.querySelector('#cards');
