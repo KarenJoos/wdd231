@@ -7,5 +7,3 @@ navbutton.addEventListener('click', () => {
     navbutton.classList.toggle('show');
     navlinks.classList.toggle('show');
 })
-
-

@@ -68,9 +68,9 @@ header span {
     border-bottom: solid 1px #ddd;
 }
 
-/* .navigation li.current {
+.navigation li.current {
     background-color: #eee;
-} */
+}
 
 .navigation a:hover {
     background-color: #EDF7B5;
