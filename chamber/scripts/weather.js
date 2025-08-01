@@ -40,7 +40,7 @@ function displayResults(data) {
     weatherIcon.setAttribute('SRC', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = `${desc}`;
-    // tempHigh.textContent = `${hi}`;
+    tempHigh.textContent = `${hi}`;
 }
 
 apiFetch();
