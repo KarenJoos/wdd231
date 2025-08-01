@@ -31,6 +31,10 @@ async function apiFetch() {
     }
 }
 
+// function dailyTemps(forcastData) {
+
+// }
+
 function displayResults(data) {
     let fahrenheitTemp = `${(data.main.temp - 273.15) * 1.8 + 32}`;
     currentTemp.innerHTML = fahrenheitTemp.toString(2) + '&deg;F';
