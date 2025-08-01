@@ -10,17 +10,17 @@
     <link rel="icon" href="favicon.ico">
 
     <!-- Facebook Meta Data -->
-    <meta property="og:title" content="Herriman Chamber of Commerce">
-    <meta property="og:description"
-        content="Herriman Chamber of Commerce Directory">
-    <meta property="og:image" content="https://www.facebook.com/photo/?fbid=10160669096153464&set=a.435523973463">
-    <meta property="og:url" content="https://www.facebook.com/">
+    <meta property="og:title" content="Chamber Home">
+    <meta property="og:description" content="Herriman Chamber of Commerce Homepage">
+    <meta property="og:image" content="https://KarenJoos.github.io/wdd231/chamber">
+    <meta property="og:url" content="https://KarenJoos.github.io/wdd231/chamber">
 
 
     <!-- Script Links Here -->
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
 
     <!-- Style Sheets Here -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -36,33 +36,21 @@
 
 <body>
     <header>
-        <h1>Chamber Directory</h1>
         <img src="images/favicon.ico" alt="site logo" width="1" height="1">
         <span>Herriman Chamber of Commerce</span>
         <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
         <nav id="nav-bar" class="navigation">
-            <ul>
-                <li class="#"><a href="index.html">Home</a></li>
-                <li class="#"><a href="directory.html">Directory</a></li>
-                <li class="#"><a href="join.html">Join</a></li>
-                <li class="#"><a href="#">Discover</a></li>
-            </ul>
+            <li class="#"><a href="index.html">Home</a></li>
+            <li class="#"><a href="directory.html">Directory</a></li>
+            <li class="#"><a href="join.html">Join</a></li>
+            <li class="#"><a href="#">Discover</a></li>
         </nav>
     </header>
+
     <main>
-        <div class="menu">
-            <button id="btngrid">Grid</button>
-            <button id="btnlist">List</button>            
-        </div>
-        <article id="cards" class="grid">
-            <!-- Layout=='grid' if layout parameter is grid than show this block -->
-            <!-- <ul id="grid" class="grid"></ul> -->
-        
-            <!-- Layout=='list' if layout parameter is list than show this block -->
-            <!-- <ul id="list" class="list"></ul> -->
-        </article>
-        
+
     </main>
+
     <footer>
         <p>Herriman Chamber of Commerce<br> 12345 Herriman Main<br> Herriman, Utah 84096<br> info@herrimancc.org<br> (888)
             555-5555</p>
@@ -71,12 +59,13 @@
                     height="16"></a>
             <a href="https://www.linkedin.com/in/karen-joos-22700a2b2/" target="_blank"><img src="images/linkedin.svg"
                     alt="Linked in" width="16" height="16"></a>
-            <a href="https://www.facebook.com/karen.c.ford.9" target="_blank"><img src="images/facebook.svg"
-                    alt="Facebook" width="16" height="16"></a>
+            <a href="https://www.facebook.com/karen.c.ford.9" target="_blank"><img src="images/facebook.svg" alt="Facebook"
+                    width="16" height="16"></a>
         </div>
-        <p>WDD231 Class Project<br> Karen Joos<br> &copy; <span id="currentyear"></span> Herriman Chamber of Commerce<br> Last
+        <p>WDD231 Class Project<br> Karen Joos<br> &copy; <span id="currentyear"></span> Herriman Chamber of Commerce<br>
+            Last
             Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
-
+    
 </html>
