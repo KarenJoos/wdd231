@@ -10,7 +10,7 @@ const sunset = document.querySelector('#sunset');
 
 // 40.51, -112.03
 
-const myKey = "2ae97b4f41228da1a40cc7e460e7379a";
+const myKey = "484eefccd05a797869ea963cf089d774";
 // const myLat = "40.51";
 // const myLong = "-112.03";
 
@@ -31,20 +31,24 @@ async function apiFetch() {
     }
 }
 
-// function dailyTemps(forcastData) {
-
-// }
-
 function displayResults(data) {
     let fahrenheitTemp = `${(data.main.temp - 273.15) * 1.8 + 32}`;
     currentTemp.innerHTML = fahrenheitTemp.toString(2) + '&deg;F';
-    humidity.innerHTML = `${data.main.humidity}%`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('SRC', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = `${desc}`;
-    tempHigh.textContent = `${hi}`;
+    // tempHigh.textContent = `${hi}`;
+    humidity.innerHTML = `${data.main.humidity}%`;
+    let timezone = data.timezone;
+    let rise = data.sys.sunrise;
+    let srise = moment.utc(rise, 'X').add(timezone, 'seconds').format('HH:mm a');
+    sunrise.innerHTML = `${srise}`;
+    let set = data.sys.sunset;
+    let sset = moment.utc(set, 'X').add(timezone, 'seconds').format('HH:mm a');
+    sunset.innerHTML = `${sset}`;
+
 }
 
 apiFetch();

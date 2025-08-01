@@ -21,6 +21,7 @@
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
 
 
     <!-- Style Sheets Here -->
@@ -53,32 +54,39 @@
         <h1>Home</h1>
         <img class="hero" src="images/herriman.webp" alt="Karen Joos">
         <!-- <a href="#">Join</a> -->
-        <section class="event">
-            <h2>Events</h2>
-            <p></p>
-        </section>
-        <section class="current">
-            <h2>Current Weather</h2>
+        <div class="event-weather"></div>
+            <section class="event">
+                <h2>Events</h2>
+                <h3>Current</h3>
+                <p></p>
+                <h3>Future</h3>
+                <p></p>
+            </section>
+            <section class="current">
+                <h2>Current Weather</h2>
+                    <!-- icon (own column), temp, description, high, low, humidity, sunrise, sunset -->
+                    <figure>
+                        <img id="weather-icon" src="weather.js" alt="Weather Icon">
+                    </figure>
+                    <p><span id="current-temp"></span></p>
+                    <p><span id="description"></span></p>
+                    <p><span id="high"></span></p>
+                    <p><span id="low"></span></p>
+                    <p><span id="humidity"></span></p>
+                    <p><span id="sunrise"></span></p>
+                    <p><span id="sunset"></span></p>
                 <!-- icon (own column), temp, description, high, low, humidity, sunrise, sunset -->
-                <figure>
-                    <img id="weather-icon" src="" alt="">
-                </figure>
-                <p><span id="current-temp"></span></p>
-                <p><span id="description"></span></p>
-                <p><span id="high"></span></p>
-                <p><span id="low"></span></p>
-                <p><span id="humidity"></span></p>
-                <p><span id="sunrise"></span></p>
-                <p><span id="sunset"></span></p>
-            <!-- icon (own column), temp, description, high, low, humidity, sunrise, sunset -->
-        </section>
-        <section class="forcast">
-            <h2>Weather Forecast</h2>
-            <!-- today, tomorrow, next day temps -->
-        </section>
-        <section class="spotlights">
-            
-        </section>
+            </section>
+            <section class="forcast">
+                <h2>Weather Forecast</h2>
+                <!-- today, tomorrow, next day temps -->
+            </section>
+        </div>
+        <div class="spotlight">
+            <section>
+                
+            </section>
+        </div>
     </main>
     <footer>
         <p>Herriman Chamber of Commerce<br> 12345 Herriman Main<br> Herriman, Utah 84096<br> info@herrimancc.org<br> (888)
