@@ -1,30 +1,35 @@
-//const response = await fetch('https://karenjoos.github.io/wdd231/chamber/data/members.json');
 const gridbutton = document.querySelector("#btngrid");
 const listbutton = document.querySelector("#btnlist");
 const display = document.querySelector("article");//
 const cards = document.querySelector('#cards');
+const spotlight = document.querySelector('#spotlight');
 
 async function getData() {
     const response = await fetch('https://karenjoos.github.io/wdd231/chamber/data/members.json');
     const data = await response.json();
-    console.log(data.members);
     displayMembers(data.members);
+    
+    // displayRandomMembers(data.members);
 }
 
 getData();
 
-gridbutton.addEventListener("click", () => {
-    display.classList.add("grid");
-    display.classList.remove("list");
-})
+if (gridbutton != null) {
+    gridbutton.addEventListener("click", () => {
+        display.classList.add("grid");
+        display.classList.remove("list");
+    })
+}
 
-listbutton.addEventListener("click", () => {
-    display.classList.add("list");
-    display.classList.remove("grid");
-})
+if (listbutton != null) {
+    listbutton.addEventListener("click", () => {
+        display.classList.add("list");
+        display.classList.remove("grid");
+    })
+}
 
 const displayMembers = (members) => {
-    members.forEach((member) => { 
+    members.forEach((member) => {
         let classList = "";
         let card = document.createElement('section');
         let name = document.createElement('h2');
@@ -53,34 +58,42 @@ const displayMembers = (members) => {
         cards.appendChild(card);
 
     });
+}
 
-    // const displayListMembers = (members) => {
-    // members.forEach((member) => { 
-    //     let card = document.createElement('section');
-    //     let name = document.createElement('h2');
-    //     let address = document.createElement('p');
-    //     let phonenumber = document.createElement('p');
-    //     let url = document.createElement('p');
-    //     let image = document.createElement('img');
+//const random = displayRandomMembers(Math.floor(Math.random() * displayRandomMembers.length));
+// console.log(random1);
+const randomThreeMembers = getData.random(displayRandomMembers, 3);
 
-    //     name.textContent = `${member.name}`;
-    //     address.textContent = `${member.address}`;
-    //     phonenumber.textContent = `${member.phonenumber}`;
-    //     url.textContent = `${member.url}`;
+const displayRandomMembers = (members) => {
 
-    //     image.setAttribute('src', member.image);
-    //     image.setAttribute('alt', `Member Name${member.name}`);
-    //     image.setAttribute('loading', 'lazy');
-    //     image.setAttribute('width', '200');
-    //     image.setAttribute('height', '150');
+    var random = Object.keys(members)[Math.floor(Math.random() * members.length)];
+        members((member) => {
+            let card = document.createElement('section');
+            let name = document.createElement('h2');
+            let url = document.createElement('p');
+            let phonenumber = document.createElement('p');
+            let email = document.createElement('p');
+            let image = document.createElement('img');
 
-    //     card.appendChild(image);
-    //     card.appendChild(name);
-    //     card.appendChild(address);
-    //     card.appendChild(phonenumber);
-    //     card.appendChild(url);
+            name.textContent = `${member.name}`;
+            email.textContent = `EMAIL: ${member.email}`;
+            phonenumber.textContent = `PHONE: ${member.phonenumber}`;
+            url.textContent = `URL${member.url}`;
 
-    //     cards.appendChild(card);
+            image.setAttribute('src', member.image);
+            image.setAttribute('alt', `Member Name${member.name}`);
+            image.setAttribute('loading', 'lazy');
+            image.setAttribute('width', '200');
+            image.setAttribute('height', '150');
 
-    // });
+            card.appendChild(name);
+            card.appendChild(image);
+            card.appendChild(email);
+            card.appendChild(phonenumber);
+            card.appendChild(url);
+
+            cards.appendChild(card);
+
+        });
+
 }

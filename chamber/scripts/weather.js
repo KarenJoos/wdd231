@@ -1,12 +1,15 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('#description');
-const tempHigh = document.querySelector('#high');
-const tempLow = document.querySelector('#low');
+const tempHigh = document.querySelector('#high-temp');
+const tempLow = document.querySelector('#low-temp');
 const humidity = document.querySelector('#humidity');
 const sunrise = document.querySelector('#sunrise');
 const sunset = document.querySelector('#sunset');
 
+const today = document.querySelector('#today');
+const tomorrow = document.querySelector('#tomorrow');
+const nextDay = document.querySelector('#next-day');
 
 // 40.51, -112.03
 
@@ -39,7 +42,6 @@ function displayResults(data) {
     weatherIcon.setAttribute('SRC', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = `${desc}`;
-    // tempHigh.textContent = `${hi}`;
     humidity.innerHTML = `${data.main.humidity}%`;
     let timezone = data.timezone;
     let rise = data.sys.sunrise;
@@ -49,6 +51,14 @@ function displayResults(data) {
     let sset = moment.utc(set, 'X').add(timezone, 'seconds').format('HH:mm a');
     sunset.innerHTML = `${sset}`;
 
+    //for (const day of data.) {
+        // console.log(`Temp: ${data.main.temp}`)
+    //}
 }
+
+
+
+
+
 
 apiFetch();
