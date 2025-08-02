@@ -62,38 +62,38 @@ const displayMembers = (members) => {
 
 //const random = displayRandomMembers(Math.floor(Math.random() * displayRandomMembers.length));
 // console.log(random1);
-const randomThreeMembers = getData.random(displayRandomMembers, 3);
+// const randomThreeMembers = getData.random(displayRandomMembers, 3);
 
-const displayRandomMembers = (members) => {
+// const displayRandomMembers = (members) => {
 
-    var random = Object.keys(members)[Math.floor(Math.random() * members.length)];
-        members((member) => {
-            let card = document.createElement('section');
-            let name = document.createElement('h2');
-            let url = document.createElement('p');
-            let phonenumber = document.createElement('p');
-            let email = document.createElement('p');
-            let image = document.createElement('img');
+//     var random = Object.keys(members)[Math.floor(Math.random() * members.length)];
+//         members((member) => {
+//             let card = document.createElement('section');
+//             let name = document.createElement('h2');
+//             let url = document.createElement('p');
+//             let phonenumber = document.createElement('p');
+//             let email = document.createElement('p');
+//             let image = document.createElement('img');
 
-            name.textContent = `${member.name}`;
-            email.textContent = `EMAIL: ${member.email}`;
-            phonenumber.textContent = `PHONE: ${member.phonenumber}`;
-            url.textContent = `URL${member.url}`;
+//             name.textContent = `${member.name}`;
+//             email.textContent = `EMAIL: ${member.email}`;
+//             phonenumber.textContent = `PHONE: ${member.phonenumber}`;
+//             url.textContent = `URL${member.url}`;
 
-            image.setAttribute('src', member.image);
-            image.setAttribute('alt', `Member Name${member.name}`);
-            image.setAttribute('loading', 'lazy');
-            image.setAttribute('width', '200');
-            image.setAttribute('height', '150');
+//             image.setAttribute('src', member.image);
+//             image.setAttribute('alt', `Member Name${member.name}`);
+//             image.setAttribute('loading', 'lazy');
+//             image.setAttribute('width', '200');
+//             image.setAttribute('height', '150');
 
-            card.appendChild(name);
-            card.appendChild(image);
-            card.appendChild(email);
-            card.appendChild(phonenumber);
-            card.appendChild(url);
+//             card.appendChild(name);
+//             card.appendChild(image);
+//             card.appendChild(email);
+//             card.appendChild(phonenumber);
+//             card.appendChild(url);
 
-            cards.appendChild(card);
+//             cards.appendChild(card);
 
-        });
+//         });
 
-}
+// }
