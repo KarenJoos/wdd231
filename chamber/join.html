@@ -58,20 +58,34 @@
         <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234"></label>
         <label>Organization/Business Name <input type="text" name="organization" required autocomplete="organization-name" title="Organization-Name"></label>
     
-        <h3>Membership Levels</h3>
-
-        <label><input type="radio" name="membership" value="NP" checked>Non Profit Membership Level</label>
-        <button id="openButton1">Learn More</button>
-        <label><input type="radio" name="membership" value="Bronze">Bronze Membership Level</label>
-        <button id="openButton2">Learn More</button>
-        <label><input type="radio" name="membership" value="Silver">Silver Membership Level</label>
-        <button id="openButton3">Learn More</button>
-        <label><input type="radio" name="membership" value="Gold">Gold Membership Level</label>
-        <button id="openButton4">Learn More</button>
+        <h2>Membership Levels</h2>
+        
+        <div>
+            <label>Non Profit Membership Level</label>
+            <button id="openButton1">Learn More</button>
+        </div>
+        <div>
+            <label>Bronze Membership Level</label>
+            <button id="openButton2">Learn More</button>
+        </div>
+        <div>
+            <label>Silver Membership Level</label>
+            <button id="openButton3">Learn More</button>
+        </div>
+        <div>
+            <label>Gold Membership Level</label>
+            <button id="openButton4">Learn More</button>
+        </div>
         <dialog id="dialogBox">
             <div></div>
             <button id="closeButton">Close</button>
         </dialog>
+
+        <label><input type="radio" name="membership" value="NP" checked>Non Profit</label>
+        <label><input type="radio" name="membership" value="Bronze">Bronze</label>
+        <label><input type="radio" name="membership" value="Silver">Silver</label>
+        <label><input type="radio" name="membership" value="Gold">Gold</label>
+
 
         <label>Organization/Business Description <input type="text" name="description" title="Description"></label>
 

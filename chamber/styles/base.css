@@ -223,7 +223,7 @@ form {
     label {
         display: block;
         font-size: .8rem;
-        color: purple;
+        color: #539987;
         padding-top: .2rem;
     }
 
@@ -238,7 +238,7 @@ form {
     input[type=tel],
     input[type=date],
     input[type=email],
-    input[type=radio],
+    input[type=description],
     select {
         display: block;
         margin: .1rem 0 1rem 0;
@@ -247,6 +247,24 @@ form {
         border-radius: 4px;
         border-left-width: 5px;
         border-left-color: #555;
+        font-size: 1rem;
+        color: #3D405B;
+        width: 250px;
+    }
+
+    input[type=radio] {
+        padding: 44px;
+        margin-bottom: 11px;
+        margin-top: 11px;
+    }
+
+    div {
+        display: block;
+        margin: .1rem 0 1rem 0;
+        padding: .3rem;
+        border: 1px solid #999;
+        border-radius: 4px;
+        border-left-width: 5px;
         font-size: 1rem;
         color: #3D405B;
         width: 250px;
@@ -266,7 +284,6 @@ form {
     }
 
     input[type=submit] {
-        border: none;
         text-align: center;
         background-color: #7E78D2;
         color: white;
