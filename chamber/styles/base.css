@@ -252,7 +252,7 @@ form {
     }
 
     input:required {
-        border-left-color: #d70000;
+        border-left-color: #7E78D2;
     }
 
     input:focus {
@@ -261,7 +261,7 @@ form {
     }
 
     input:required:valid {
-        border-left-color: green;
+        border-left-color: #539987;
     }
 
     input[type=submit] {
