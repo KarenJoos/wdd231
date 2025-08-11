@@ -1,0 +1,188 @@
+/*
+****************** FONT COLORS *********************
+Payne's gray(teal) #19647E
+Verdigris(turquoise) #28AFB0
+Timber(medium pink) #DDCECD
+Isabeline(light pink) #EEE5E5
+*/
+
+
+/*************************** HEADER ***************************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    border: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #19647E;
+}
+
+/************************* HAMBURGER *************************/
+.hamburger {
+    background: none;
+    border: none;
+    color: #28AFB0;
+    cursor: pointer;
+    font-family: Verdana;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/************************* NAVIGATION *************************/
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #19647E;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: #EDF7B5;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+/************************* ABOUT ME *************************/
+
+.me {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-left: 10px;
+    column-gap: 8px;
+    margin-right: 10px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    background-color: #28AFB0;
+}
+
+.me img {
+    width: auto;
+    height: 200px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+/************************** COURSES *************************/
+
+.courses ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.courses li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDCECD;
+    height: 35px;
+    padding: 5px;
+    border: #ccc solid 1px;
+    border-radius: 4px;
+}
+
+.courses a {
+    text-decoration: none;
+}
+
+section {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.courses-listed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.course-count {
+    font-style: italic;
+}
+
+dialog {
+    background-color: #EEE5E5;
+    padding: 20px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+/************************** FOOTER **************************/
+
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 4px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}

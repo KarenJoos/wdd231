@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development - Karen Joos</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development - Karen Joos Course Home Page">
+    <meta name="author" content="Karen Joos">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Chamber Home">
+    <meta property="og:description" content="Herriman Chamber of Commerce Homepage">
+    <meta property="og:image" content="https://KarenJoos.github.io/wdd231">
+    <meta property="og:url" content="https://KarenJoos.github.io/wdd231/chamber">
+
+    <!-- Script Links Here -->
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
+    <!-- Style Sheets Here -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Google Font Here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/favicon.ico" alt="site logo" width="1" height="1">
+        <span>Karen Joos</span>
+        <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="#"><a href="chamber/index.html">Chamber Project</a></li>
+            <li class="#"><a href="final.html">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <H1>Family History</H1>
+        <h2>Site Purpose</h2>
+        <p>The purpose of this site is to encourage people to want to do family history. This could be their own family history
+            or just keeping history of themselves and their family such as a journal or photo books.</p>
+        <h2>Scenarios</h2>    
+        <P> What is family history?<br> Where can I start?</P>
+        <h2>Color Scheme</h2>
+        <p>
+            Payne's gray(teal) #19647E   H1<br>
+            Verdigris(turquoise) #28AFB0    Headings<br>
+            Timber(medium pink) #DDCECD     Secondary Color<br>
+            Isabeline(light pink) #EEE5E5   Highlighting areas for hovers and such 
+        </p>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/KarenJoos" target="_blank"><img src="images/github.svg" alt="Git Hub" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/karen-joos/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Linked in" width="16" height="16"></a>
+            <a href="https://www.facebook.com/karen.c.ford.9" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Karen Joos USA</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
