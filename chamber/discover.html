@@ -19,12 +19,12 @@
     <!-- Script Links Here -->
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
 
     <!-- Style Sheets Here -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 
     <!-- Google Font Here -->
@@ -49,18 +49,7 @@
     </header>
     <main>
         <h1>Discover Herriman</h1>
-        <div class="menu">
-            <button id="btngrid">Grid</button>
-            <button id="btnlist">List</button>
-        </div>
-        <article id="cards" class="grid">
-            <!-- Layout=='grid' if layout parameter is grid than show this block -->
-            <!-- <ul id="grid" class="grid"></ul> -->
-
-            <!-- Layout=='list' if layout parameter is list than show this block -->
-            <!-- <ul id="list" class="list"></ul> -->
-        </article>
-
+        <element id="allplaces"></element>
     </main>
     <footer>
         <p>Herriman Chamber of Commerce<br> 12345 Herriman Main<br> Herriman, Utah 84096<br> info@herrimancc.org<br>
@@ -78,6 +67,7 @@
             Commerce<br> Last
             Modified: <span id="lastModified"></span></p>
     </footer>
+    <script src="scripts/places.js" type="module"></script>
 </body>
 
 </html>

@@ -1,0 +1,45 @@
+/* Must contain a media query */
+@media only screen and (min-width: 38rem) {
+
+    #allplaces div {  
+        display: grid;
+        grid-template-areas:
+        "photo name"
+        "photo description"
+        "photo location";
+    }
+
+    #allplaces div img {
+        width: 300px;
+        height: 200px;
+        grid-area: photo;
+    }
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+}

@@ -1,32 +1,18 @@
 /* Must contain a media query */
-@media only screen and (min-width: 38rem) {
+
+@media only screen and (min-width: 64rem) {
+
+#allplaces {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
     header,
     main,
     nav,
     footer {
-        max-width: 900px;
+        max-width: 1200px;
         margin: 0 auto;
-    }
-
-    header {
-        grid-template-columns: 24px auto;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    .navigation {
-        display: block;
-    }
-
-    .navigation ul {
-        display: flex;
-    }
-
-    .navigation a {
-        border: none;
     }
 
 }

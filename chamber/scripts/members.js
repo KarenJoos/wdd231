@@ -1,3 +1,4 @@
+import { members } from ' ../data/members.mjs';
 const gridbutton = document.querySelector("#btngrid");
 const listbutton = document.querySelector("#btnlist");
 const display = document.querySelector("article");//
