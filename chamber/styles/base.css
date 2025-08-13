@@ -68,7 +68,7 @@ header span {
     border-bottom: solid 1px #ddd;
 }
 
-.navigation li.active {
+.navigation li.current {
     background-color: #eee;
 }
 
