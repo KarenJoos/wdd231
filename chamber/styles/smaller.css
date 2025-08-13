@@ -78,4 +78,5 @@
 #allPlaces div button {
     margin: 1rem 10px;
     background-color: #EDF7B5;
+    border-radius: 8px;
 }
