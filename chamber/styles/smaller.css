@@ -38,7 +38,7 @@
 
 }
 
-#allplaces div {
+#allPlaces div {
     margin: 1rem 8px;
     border: 1px solid #999;
     background-color: #eee;
@@ -50,26 +50,32 @@
     "name"
     "photo"
     "description"
-    "location";
+    "location"
+    "button";
+
 }
 
-#allplaces div h2 {
+#allPlaces div h2 {
     margin: 1rem 10px;
     grid-area: name;
 }
 
-#allplaces div img {
+#allPlaces div img {
     width: 100%;
     grid-area: photo;
 }
 
-#allplaces div p {
+#allPlaces div p {
     margin: 1rem 10px;
     grid-area: description;
 }
 
-#allplaces div address {
+#allPlaces div address {
     margin: 10px;
     grid-area: location;
 }
 
+#allPlaces div button {
+    margin: 1rem 10px;
+    background-color: #EDF7B5;
+}
