@@ -43,6 +43,4 @@ document.querySelector('#results').innerHTML = `
     <p>Organizational Title: ${memberInfo.get('title')}</p>
     <p>Email: ${memberInfo.get('email')}</p>
     <p>Phone: ${memberInfo.get('phone')}</p>
-
-
     `
