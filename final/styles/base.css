@@ -1,6 +1,6 @@
 /*
 ****************** FONT COLORS *********************
-Payne's gray(teal) #19647E
+Charcoal #373F47
 Verdigris(turquoise) #28AFB0
 Timber(medium pink) #DDCECD
 Isabeline(light pink) #EEE5E5
@@ -68,7 +68,7 @@ header span {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: #19647E;
+    color: #373F47;
     text-decoration: none;
     border-bottom: solid 1px #333;
 }
@@ -235,6 +235,42 @@ input:-webkit-autofill {
     grid-column: 2/3;
     align-content: center;
 }
+
+    #activity div {
+        margin: 1rem 8px;
+        border: 1px solid #999;
+        background-color: #EEE5E5;
+        border-radius: 8px;
+        overflow: hidden;
+    
+        display: grid;
+        grid-template-areas:
+        "name"
+        "photo"
+        "description"
+        "materials";
+    }
+    
+    #actity div h2 {
+        margin: 1rem 10px;
+        grid-area: name;
+        color: black;
+    }
+    
+    #activity div img {
+        width: 100%;
+        grid-area: photo;
+    }
+    
+    #activity div p {
+        margin: 1rem 10px;
+        grid-area: description;
+    }
+    
+    #activity div p {
+        margin: 10px;
+        grid-area: materials;
+    }
 
 
 /************************** FOOTER **************************/
