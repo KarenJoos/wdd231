@@ -58,6 +58,7 @@
 #allPlaces div h2 {
     margin: 1rem 10px;
     grid-area: name;
+    color: black;
 }
 
 #allPlaces div img {

@@ -6,6 +6,9 @@ Timber(medium pink) #DDCECD
 Isabeline(light pink) #EEE5E5
 */
 
+* {
+    font-family: playfair display;
+}
 
 /*************************** HEADER ***************************/
 header {
@@ -25,14 +28,14 @@ header img {
 
 header span {
     font-size: 1.2rem;
-    color: #19647E;
+    color: #28AFB0;
 }
 
 /************************* HAMBURGER *************************/
 .hamburger {
     background: none;
     border: none;
-    color: #28AFB0;
+    color: #19647E;
     cursor: pointer;
     font-family: Verdana;
 }
@@ -67,92 +70,29 @@ header span {
     padding: .8rem 10px;
     color: #19647E;
     text-decoration: none;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px #333;
 }
 
-.navigation li.current {
-    background-color: #eee;
+.navigation li.active {
+    background-color: #EEE5E5;
 }
 
 .navigation a:hover {
-    background-color: #EDF7B5;
+    background-color: #DDCECD;
 }
 
 h1 {
     margin-left: 10px;
+    color: #28AFB0;
 }
 
 /************************* ABOUT ME *************************/
 
-.me {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin-left: 10px;
-    column-gap: 8px;
-    margin-right: 10px;
-}
-
 h2 {
     display: flex;
     justify-content: center;
-    background-color: #28AFB0;
 }
 
-.me img {
-    width: auto;
-    height: 200px;
-    /* display: flex;
-    justify-content: center; */
-}
-
-/************************** COURSES *************************/
-
-.courses ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 10px;
-}
-
-.courses li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #DDCECD;
-    height: 35px;
-    padding: 5px;
-    border: #ccc solid 1px;
-    border-radius: 4px;
-}
-
-.courses a {
-    text-decoration: none;
-}
-
-section {
-    margin: 1rem auto;
-    text-align: center;
-}
-
-.courses-listed {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.course-count {
-    font-style: italic;
-}
-
-dialog {
-    background-color: #EEE5E5;
-    padding: 20px;
-}
-
-::backdrop {
-    background-color: rgb(0 0 0 / 50%);
-}
 
 /************************** FOOTER **************************/
 
@@ -174,7 +114,7 @@ footer {
     align-items: center;
     width: 44px;
     height: 44px;
-    border: #ccc solid 1px;
+    border: #333 solid 1px;
     border-radius: 4px;
 }
 

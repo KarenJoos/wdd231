@@ -1,0 +1,26 @@
+@media only screen and (min-width: 38rem) {
+    #activity div {
+        display: grid;
+        grid-template-areas:
+        "photo name"
+        "photo description"
+        "photo location"
+        "button button";
+    }
+
+    #activity {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #activity div img {
+        width: 200px;
+        height: 150px;
+        grid-area: photo;
+    }
+
+    #activity div img:hover {
+        box-shadow: 0 0 50px #333;
+    }
+}
+

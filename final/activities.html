@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 231 - Web Frontend Development - Karen Joos</title>
     <meta name="description" content="WDD 231 - Web Frontend Development - Karen Joos Course Home Page">
-    <meta name="author" content="Karen Joos">
+    <meta name="author" content="Karen Joos"> 
     <link rel="icon" href="favicon.ico">
 
-    <meta property="og:title" content="Final Project Home">
-    <meta property="og:description" content="Final Project Homepage">
+    <meta property="og:title" content="Final Project">
+    <meta property="og:description" content="Final Project Activities">
     <meta property="og:image" content="https://KarenJoos.github.io/wdd231">
     <meta property="og:url" content="https://KarenJoos.github.io/wdd231/final">
 
     <!-- Script Links Here -->
     <script src="scripts/dates.js" defer></script>
-    <!-- <script src="scripts/home.js" defer></script> -->
     <script src="scripts/navigation.js" defer></script>
 
     <!-- Style Sheets Here -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 
     <!-- Google Font Here -->
@@ -40,14 +40,14 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="activities.html">Activities</a></li>
+            <li class="active"><a href="activities.html">Activities</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Family History</h1>
-        <
+        <h1>Activities</h1>
+        <element id="activity"></element>
     </main>
     <footer>
         <div class="social">
@@ -61,6 +61,9 @@
         <p>&copy; <span id="currentyear"></span> Karen Joos USA</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
+
+    <script src="scripts/activities.js" type="module"></script>
+
 </body>
 
 </html>
