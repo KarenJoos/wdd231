@@ -21,7 +21,8 @@ header {
 
 header img {
     display: block;
-    width: 100%;
+    width: 30px;
+    height: 30px;
     height: auto;
     padding-bottom: 5px;
 }
@@ -218,6 +219,14 @@ input:-webkit-autofill {
     overflow: hidden;
 }
 
+.event-weather section{
+    background-color: #DDCECD;
+}
+
+.about {
+    background-color: #28AFB0;
+}
+
 .weather {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -255,6 +264,7 @@ input:-webkit-autofill {
         margin: 1rem 10px;
         grid-area: name;
         color: black;
+        
     }
     
     #activity div img {
