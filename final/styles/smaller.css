@@ -11,6 +11,43 @@
         max-width: 320px;
         margin: 0 auto;
     }
+
+    #activity div {
+        margin: 1rem 8px;
+        border: 1px solid #999;
+        background-color: #EEE5E5;
+        border-radius: 8px;
+        overflow: hidden;
+    
+        display: grid;
+        grid-template-areas:
+        "name"
+        "photo"
+        "description"
+        "materials";
+    }
+    
+    #actity div h2 {
+        margin: 1rem 10px;
+        grid-area: name;
+        color: black;
+    }
+    
+    #activity div img {
+        width: 100%;
+        grid-area: photo;
+    }
+    
+    #activity div p {
+        margin: 1rem 10px;
+        grid-area: description;
+    }
+    
+    #activity div p {
+        margin: 10px;
+        grid-area: materials;
+    }
+    
 }
 
 /*
@@ -21,38 +58,3 @@ Timber(medium pink) #DDCECD
 Isabeline(light pink) #EEE5E5
 */
 
-#activity div {
-    margin: 1rem 8px;
-    border: 1px solid #999;
-    background-color: #EEE5E5;
-    border-radius: 8px;
-    overflow: hidden;
-
-    display: grid;
-    grid-template-areas:
-    "name"
-    "photo"
-    "description"
-    "materials";
-}
-
-#actity div h2 {
-    margin: 1rem 10px;
-    grid-area: name;
-    color: black;
-}
-
-#activity div img {
-    width: 100%;
-    grid-area: photo;
-}
-
-#activity div p {
-    margin: 1rem 10px;
-    grid-area: description;
-}
-
-#activity div p {
-    margin: 10px;
-    grid-area: materials;
-}
