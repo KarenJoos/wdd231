@@ -13,6 +13,12 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    #activity div img {
+        width: 150px;
+        height: 150px;
+        grid-area: photo;
+    }
+
     #activity div img:hover {
         box-shadow: 0 0 50px #333;
     }

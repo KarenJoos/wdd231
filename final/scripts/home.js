@@ -41,14 +41,14 @@ function displayResults(data) {
     weatherIcon.setAttribute('SRC', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = `${desc}`;
-    humidity.innerHTML = `${data.main.humidity}%`;
-    let timezone = data.timezone;
-    let rise = data.sys.sunrise;
-    let srise = moment.utc(rise, 'X').add(timezone, 'seconds').format('HH:mm a');
-    sunrise.innerHTML = `${srise}`;
-    let set = data.sys.sunset;
-    let sset = moment.utc(set, 'X').add(timezone, 'seconds').format('HH:mm a');
-    sunset.innerHTML = `${sset}`;
+    humidity.innerHTML = `${data.main.humidity}%` + ' humidity';
+    //let timezone = data.timezone;
+    //let rise = data.sys.sunrise;
+    //let srise = moment.utc(rise, 'X').add(timezone, 'seconds').format('HH:mm a');
+    //sunrise.innerHTML = `${srise}`;
+    //let set = data.sys.sunset;
+    //let sset = moment.utc(set, 'X').add(timezone, 'seconds').format('HH:mm a');
+    //sunset.innerHTML = `${sset}`;
 }
 
 apiFetch();
